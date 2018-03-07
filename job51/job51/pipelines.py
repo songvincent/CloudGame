@@ -8,7 +8,7 @@
 import json
 class Job51Pipeline(object):
     def __init__(self):
-        self.f=open('Beijing.json','w+',encoding='utf-8')
+        self.f=open('DaLian.json','w+',encoding='utf-8')
         
 
     def process_item(self, item, spider):
@@ -17,5 +17,4 @@ class Job51Pipeline(object):
         return item
         
     def close_spider(self,spider):
-        print(count)
         self.f.close()
